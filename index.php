@@ -15,6 +15,7 @@ echo "<pre>";
 
 dd($users->all());
 
+
 echo "</pre>";
 
 
