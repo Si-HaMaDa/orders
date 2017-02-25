@@ -2,8 +2,6 @@
 
 require 'start.php';
 
-// use Illuminate\Database\Capsule\Manager as Eloquent;
-
 use classes\users\users as Users;
 
 
@@ -11,12 +9,12 @@ $users = new Users();
 // $users->name = 'HaMaDa';
 // $users->save();
 
-echo "<pre>";
+// echo "<pre>";
 
-dd($users->all());
+// dd($users->all());
 
 
-echo "</pre>";
+// echo "</pre>";
 
 
 

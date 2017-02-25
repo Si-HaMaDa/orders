@@ -387,6 +387,11 @@ class ComposerStaticInite8ed9557ff8684ecce37aa91aafaaaa0
         'Symfony\\Component\\Translation\\Util\\ArrayConverter' => __DIR__ . '/..' . '/symfony/translation/Util/ArrayConverter.php',
         'Symfony\\Component\\Translation\\Writer\\TranslationWriter' => __DIR__ . '/..' . '/symfony/translation/Writer/TranslationWriter.php',
         'Symfony\\Polyfill\\Mbstring\\Mbstring' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/Mbstring.php',
+        'classes\\aboutUs\\aboutUs' => __DIR__ . '/../..' . '/app/classes/aboutUs/aboutUs.php',
+        'classes\\callUs\\callUs' => __DIR__ . '/../..' . '/app/classes/callUs/callUs.php',
+        'classes\\orders\\orders' => __DIR__ . '/../..' . '/app/classes/orders/orders.php',
+        'classes\\outProducts\\outProducts' => __DIR__ . '/../..' . '/app/classes/outProducts/outProducts.php',
+        'classes\\products\\products' => __DIR__ . '/../..' . '/app/classes/products/products.php',
         'classes\\users\\users' => __DIR__ . '/../..' . '/app/classes/users/users.php',
     );
 
