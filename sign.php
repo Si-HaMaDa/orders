@@ -1,8 +1,4 @@
-<?php require 'start.php'; ?>
-
-<?php
-echo @$_POST['name'];
-?>
+<?php require 'header-1.php'; ?>
 
   <div class="login-wrap">
 	<div class="login-html">
@@ -70,7 +66,4 @@ echo @$_POST['name'];
 	</div>
 </div>
   
-
-
-<?php require 'end.php'; ?>
-
+<?php require 'footer.php'; ?>

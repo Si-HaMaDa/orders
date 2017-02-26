@@ -22,10 +22,10 @@ $capsule::schema()->create('users', function($table)
    $table->string('name');
    $table->string('email')->unique();
    $table->string('pass');
-   $table->string('lvl');
+   $table->string('lvl')->nullable();
    $table->integer('phone');
-   $table->string('country');
-   $table->string('city');
+   $table->string('country')->nullable();
+   $table->string('city')->nullable();
    $table->timestamps();
 });
 
@@ -36,10 +36,10 @@ $capsule::schema()->create('products', function($table)
    $table->increments('id');
    $table->string('name');
    $table->string('img');
-   $table->longText('desc');
+   $table->longText('desc')->nullable();
    $table->integer('price');
-   $table->string('statu');
-   $table->integer('num');
+   $table->string('statu')->nullable();
+   $table->integer('num')->nullable();
    $table->timestamps();
 });
 
@@ -48,10 +48,10 @@ $capsule::schema()->dropIfExists('orders');
 $capsule::schema()->create('orders', function($table)
 {
    $table->increments('id');
-   $table->integer('user');
-   $table->integer('product');
+   $table->integer('user_id');
+   $table->integer('product_id');
    $table->integer('num');
-   $table->text('notes');
+   $table->text('notes')->nullable();
    $table->timestamps();
 });
 
@@ -62,10 +62,10 @@ $capsule::schema()->create('outProducts', function($table)
    $table->increments('id');
    $table->string('name');
    $table->string('img');
-   $table->longText('desc');
-   $table->integer('price');
-   $table->string('statu');
-   $table->integer('num');
+   $table->longText('desc')->nullable();
+   $table->integer('price')->nullable();
+   $table->string('statu')->nullable();
+   $table->integer('num')->nullable();
    $table->timestamps();
 });
 
@@ -77,9 +77,9 @@ $capsule::schema()->create('callUs', function($table)
    $table->string('name');
    $table->string('email');
    $table->string('phone');
-   $table->longText('desc');
-   $table->string('country');
-   $table->integer('city');
+   $table->longText('desc')->nullable();
+   $table->string('country')->nullable();
+   $table->integer('city')->nullable();
    $table->timestamps();
 });
 
@@ -89,9 +89,9 @@ $capsule::schema()->create('aboutUs', function($table)
 {
    $table->increments('id');
    $table->string('name');
-   $table->text('head');
-   $table->string('phones');
-   $table->string('worktime');
-   $table->longText('desc');
+   $table->text('head')->nullable();
+   $table->string('phones')->nullable();
+   $table->string('worktime')->nullable();
+   $table->longText('desc')->nullable();
    $table->timestamps();
 });

@@ -1,6 +1,6 @@
 <?php
 
-require 'start.php';
+require 'header-1.php';
 
 use classes\users\users as Users;
 
@@ -9,14 +9,13 @@ $users = new Users();
 // $users->name = 'HaMaDa';
 // $users->save();
 
-// echo "<pre>";
+echo "<pre>";
 
-// dd($users->all());
-
-
-// echo "</pre>";
+dd($users->all());
 
 
+echo "</pre>";
 
 
-require 'end.php';
+
+require 'footer.php';
