@@ -1,11 +1,11 @@
-<?php namespace classes\outProducts;
+<?php namespace classes\OutProduct;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
 /**
-* outProducts class
+* OutProducts class
 */
-class outProducts extends Eloquent
+class OutProduct extends Eloquent
 {
 	function __construct()
 	{

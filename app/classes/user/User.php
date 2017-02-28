@@ -1,11 +1,11 @@
-<?php namespace classes\aboutUs;
+<?php namespace classes\User;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
 /**
-* aboutUs class
+* Users class
 */
-class aboutUs extends Eloquent
+class User extends Eloquent
 {
 	function __construct()
 	{

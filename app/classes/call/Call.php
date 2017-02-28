@@ -1,11 +1,11 @@
-<?php namespace classes\callUs;
+<?php namespace classes\Call;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
 /**
-* callUs class
+* Calls class
 */
-class callUs extends Eloquent
+class Call extends Eloquent
 {
 	function __construct()
 	{

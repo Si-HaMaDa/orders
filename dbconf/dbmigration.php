@@ -56,8 +56,8 @@ $capsule::schema()->create('orders', function($table)
 });
 
 
-$capsule::schema()->dropIfExists('outProducts');
-$capsule::schema()->create('outProducts', function($table)
+$capsule::schema()->dropIfExists('out_products');
+$capsule::schema()->create('out_products', function($table)
 {
    $table->increments('id');
    $table->string('name');
@@ -70,8 +70,8 @@ $capsule::schema()->create('outProducts', function($table)
 });
 
 
-$capsule::schema()->dropIfExists('callUs');
-$capsule::schema()->create('callUs', function($table)
+$capsule::schema()->dropIfExists('calls');
+$capsule::schema()->create('calls', function($table)
 {
    $table->increments('id');
    $table->string('name');
@@ -84,8 +84,8 @@ $capsule::schema()->create('callUs', function($table)
 });
 
 
-$capsule::schema()->dropIfExists('aboutUs');
-$capsule::schema()->create('aboutUs', function($table)
+$capsule::schema()->dropIfExists('infos');
+$capsule::schema()->create('infos', function($table)
 {
    $table->increments('id');
    $table->string('name');

@@ -1,11 +1,11 @@
-<?php namespace classes\orders;
+<?php namespace classes\Order;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
 /**
-* orders class
+* Orders class
 */
-class orders extends Eloquent
+class Order extends Eloquent
 {
 	function __construct()
 	{

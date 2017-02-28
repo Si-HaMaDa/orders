@@ -1,11 +1,11 @@
-<?php namespace classes\products;
+<?php namespace classes\Info;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
 /**
-* products class
+* Info class
 */
-class products extends Eloquent
+class Info extends Eloquent
 {
 	function __construct()
 	{
