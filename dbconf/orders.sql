@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net
 --
 -- المزود: localhost:3306
--- أنشئ في: 26 فبراير 2017 الساعة 09:48
+-- أنشئ في: 28 فبراير 2017 الساعة 22:40
 -- إصدارة المزود: 5.6.35-log
 -- PHP إصدارة: 5.6.30
 
@@ -23,16 +23,17 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- بنية الجدول `aboutUs`
+-- بنية الجدول `calls`
 --
 
-CREATE TABLE IF NOT EXISTS `aboutUs` (
+CREATE TABLE IF NOT EXISTS `calls` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `head` text COLLATE utf8_unicode_ci NOT NULL,
-  `phones` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `worktime` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `desc` longtext COLLATE utf8_unicode_ci NOT NULL,
+  `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `phone` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `desc` longtext COLLATE utf8_unicode_ci,
+  `country` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `city` int(11) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
@@ -41,17 +42,16 @@ CREATE TABLE IF NOT EXISTS `aboutUs` (
 -- --------------------------------------------------------
 
 --
--- بنية الجدول `callUs`
+-- بنية الجدول `infos`
 --
 
-CREATE TABLE IF NOT EXISTS `callUs` (
+CREATE TABLE IF NOT EXISTS `infos` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `phone` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `desc` longtext COLLATE utf8_unicode_ci NOT NULL,
-  `country` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `city` int(11) NOT NULL,
+  `head` text COLLATE utf8_unicode_ci,
+  `phones` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `worktime` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `desc` longtext COLLATE utf8_unicode_ci,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
@@ -65,10 +65,10 @@ CREATE TABLE IF NOT EXISTS `callUs` (
 
 CREATE TABLE IF NOT EXISTS `orders` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `user` int(11) NOT NULL,
-  `product` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `product_id` int(11) NOT NULL,
   `num` int(11) NOT NULL,
-  `notes` text COLLATE utf8_unicode_ci NOT NULL,
+  `notes` text COLLATE utf8_unicode_ci,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
@@ -77,17 +77,17 @@ CREATE TABLE IF NOT EXISTS `orders` (
 -- --------------------------------------------------------
 
 --
--- بنية الجدول `outProducts`
+-- بنية الجدول `out_products`
 --
 
-CREATE TABLE IF NOT EXISTS `outProducts` (
+CREATE TABLE IF NOT EXISTS `out_products` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `img` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `desc` longtext COLLATE utf8_unicode_ci NOT NULL,
-  `price` int(11) NOT NULL,
-  `statu` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `num` int(11) NOT NULL,
+  `desc` longtext COLLATE utf8_unicode_ci,
+  `price` int(11) DEFAULT NULL,
+  `statu` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `num` int(11) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
@@ -103,10 +103,10 @@ CREATE TABLE IF NOT EXISTS `products` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `img` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `desc` longtext COLLATE utf8_unicode_ci NOT NULL,
+  `desc` longtext COLLATE utf8_unicode_ci,
   `price` int(11) NOT NULL,
-  `statu` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `num` int(11) NOT NULL,
+  `statu` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `num` int(11) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
@@ -123,10 +123,10 @@ CREATE TABLE IF NOT EXISTS `users` (
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `pass` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `lvl` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `lvl` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `phone` int(11) NOT NULL,
-  `country` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `city` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `country` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `city` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
