@@ -1,4 +1,23 @@
 <?php require 'header-1.php'; ?>
+if(isset($_POST['signup'])){
+	
+	if($_POST['userpass'] === $_POST['rpass']){
+		$username  = $_POST['username'];
+		$userpass  = $_POST['userpass'];
+		$useremail  = $_POST['email'];
+		$userphone = $_POST['phone'];
+		$user = new users();
+		$user->name = $username;
+		$user->pass = $userpass;
+		$user->email = $useremail;
+		$user->phone = $userphone;
+		$user->save();
+	}else {
+		echo "you have to type the same password";
+	}
+	
+}
+
 
   <div class="login-wrap">
 	<div class="login-html">
