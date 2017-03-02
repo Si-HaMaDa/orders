@@ -33,7 +33,7 @@
               </ul>
           </li>
           <li>
-              <a class="" href="javascript:;">
+              <a class="" href="info.php">
                   <i class="icon_genius"></i>
                   <span>Info</span>
               </a>

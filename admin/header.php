@@ -1,3 +1,12 @@
+<?php
+
+require '../vendor/autoload.php';
+
+require '../dbconf/dbconf.php';
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
