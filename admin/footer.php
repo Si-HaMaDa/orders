@@ -1,49 +1,48 @@
-
-
-  </div>
+ </section>
+</div>
 
 
 
     <!-- javascripts -->
-    <script src="niceadmin/js/jquery.js"></script>
-	  <script src="niceadmin/js/jquery-ui-1.10.4.min.js"></script>
-    <script src="niceadmin/js/jquery-1.8.3.min.js"></script>
-    <script src="niceadmin/js/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="../js/jquery.js"></script>
+	  <script src="../js/jquery-ui-1.10.4.min.js"></script>
+    <script src="../js/jquery-1.8.3.min.js"></script>
+    <script src="../js/jquery-ui-1.9.2.custom.min.js"></script>
     <!-- bootstrap -->
-    <script src="niceadmin/js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
     <!-- nice scroll -->
-    <script src="niceadmin/js/jquery.scrollTo.min.js"></script>
-    <script src="niceadmin/js/jquery.nicescroll.js"></script>
+    <script src="../js/jquery.scrollTo.min.js"></script>
+    <script src="../js/jquery.nicescroll.js"></script>
     <!-- charts scripts -->
-    <script src="niceadmin/assets/jquery-knob/js/jquery.knob.js"></script>
-    <script src="niceadmin/js/jquery.sparkline.js"></script>
-    <script src="niceadmin/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js"></script>
-    <script src="niceadmin/js/owl.carousel.js" ></script>
+    <script src="../assets/jquery-knob/js/jquery.knob.js"></script>
+    <script src="../js/jquery.sparkline.js"></script>
+    <script src="../assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js"></script>
+    <script src="../js/owl.carousel.js" ></script>
     <!-- jQuery full calendar -->
-    <script src="niceadmin/js/fullcalendar.min.js"></script> <!-- Full Google Calendar - Calendar -->
-	  <script src="niceadmin/assets/fullcalendar/fullcalendar/fullcalendar.js"></script>
+    <script src="../js/fullcalendar.min.js"></script> <!-- Full Google Calendar - Calendar -->
+	  <script src="../assets/fullcalendar/fullcalendar/fullcalendar.js"></script>
     <!--script for this page only-->
-    <script src="niceadmin/js/calendar-custom.js"></script>
-	  <script src="niceadmin/js/jquery.rateit.min.js"></script>
+    <script src="../js/calendar-custom.js"></script>
+	  <script src="../js/jquery.rateit.min.js"></script>
     <!-- custom select -->
-    <script src="niceadmin/js/jquery.customSelect.min.js" ></script>
-	  <script src="niceadmin/assets/chart-master/Chart.js"></script>
+    <script src="../js/jquery.customSelect.min.js" ></script>
+	  <script src="../assets/chart-master/Chart.js"></script>
    
     <!--custome script for all page-->
-    <script src="niceadmin/js/scripts.js"></script>
+    <script src="../js/scripts.js"></script>
     <!-- custom script for this page-->
-    <script src="niceadmin/js/sparkline-chart.js"></script>
-    <script src="niceadmin/js/easy-pie-chart.js"></script>
-    <script src="niceadmin/js/jquery-jvectormap-1.2.2.min.js"></script>
-    <script src="niceadmin/js/jquery-jvectormap-world-mill-en.js"></script>
-    <script src="niceadmin/js/xcharts.min.js"></script>
-    <script src="niceadmin/js/jquery.autosize.min.js"></script>
-    <script src="niceadmin/js/jquery.placeholder.min.js"></script>
-    <script src="niceadmin/js/gdp-data.js"></script>	
-    <script src="niceadmin/js/morris.min.js"></script>
-    <script src="niceadmin/js/sparklines.js"></script>	
-    <script src="niceadmin/js/charts.js"></script>
-    <script src="niceadmin/js/jquery.slimscroll.min.js"></script>
+    <script src="../js/sparkline-chart.js"></script>
+    <script src="../js/easy-pie-chart.js"></script>
+    <script src="../js/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="../js/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="../js/xcharts.min.js"></script>
+    <script src="../js/jquery.autosize.min.js"></script>
+    <script src="../js/jquery.placeholder.min.js"></script>
+    <script src="../js/gdp-data.js"></script>	
+    <script src="../js/morris.min.js"></script>
+    <script src="../js/sparklines.js"></script>	
+    <script src="../js/charts.js"></script>
+    <script src="../js/jquery.slimscroll.min.js"></script>
   <script>
 
       //knob

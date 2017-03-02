@@ -15,33 +15,33 @@ require '../dbconf/dbconf.php';
     <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
     <meta name="author" content="GeeksLabs">
     <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
-    <link rel="shortcut icon" href="niceadmin/img/favicon.png">
+    <link rel="shortcut icon" href="../img/favicon.png">
 
     <title>Creative - Bootstrap Admin Template</title>
 
     <!-- Bootstrap CSS -->    
-    <link href="niceadmin/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/adm/bootstrap.min.css" rel="stylesheet">
     <!-- bootstrap theme -->
-    <link href="niceadmin/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="../css/adm/bootstrap-theme.css" rel="stylesheet">
     <!--external css-->
     <!-- font icon -->
-    <link href="niceadmin/css/elegant-icons-style.css" rel="stylesheet" />
-    <link href="niceadmin/css/font-awesome.min.css" rel="stylesheet" />    
+    <link href="../css/adm/elegant-icons-style.css" rel="stylesheet" />
+    <link href="../css/adm/font-awesome.min.css" rel="stylesheet" />    
     <!-- full calendar css-->
-    <link href="niceadmin/assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" />
-	<link href="niceadmin/assets/fullcalendar/fullcalendar/fullcalendar.css" rel="stylesheet" />
+    <link href="../assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" />
+	<link href="../assets/fullcalendar/fullcalendar/fullcalendar.css" rel="stylesheet" />
     <!-- easy pie chart-->
-    <link href="niceadmin/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="../assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen"/>
     <!-- owl carousel -->
-    <link rel="stylesheet" href="niceadmin/css/owl.carousel.css" type="text/css">
-	<link href="niceadmin/css/jquery-jvectormap-1.2.2.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/adm/owl.carousel.css" type="text/css">
+	<link href="../css/adm/jquery-jvectormap-1.2.2.css" rel="stylesheet">
     <!-- Custom styles -->
-	<link rel="stylesheet" href="niceadmin/css/fullcalendar.css">
-	<link href="niceadmin/css/widgets.css" rel="stylesheet">
-    <link href="niceadmin/css/style.css" rel="stylesheet">
-    <link href="niceadmin/css/style-responsive.css" rel="stylesheet" />
-	<link href="niceadmin/css/xcharts.min.css" rel=" stylesheet">	
-	<link href="niceadmin/css/jquery-ui-1.10.4.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/adm/fullcalendar.css">
+	<link href="../css/adm/widgets.css" rel="stylesheet">
+    <link href="../css/adm/style.css" rel="stylesheet">
+    <link href="../css/adm/style-responsive.css" rel="stylesheet" />
+	<link href="../css/adm/xcharts.min.css" rel=" stylesheet">	
+	<link href="../css/adm/jquery-ui-1.10.4.min.css" rel="stylesheet">
 
   </head>
 
@@ -56,7 +56,7 @@ require '../dbconf/dbconf.php';
             </div>
 
             <!--logo start-->
-            <a href="index.html" class="logo">Orders <span class="lite">Admin</span></a>
+            <a href="index.php" class="logo">Orders <span class="lite">Admin</span></a>
             <!--logo end-->
 
             <div class="nav search-row" id="top_menu">

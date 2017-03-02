@@ -65,3 +65,5 @@
   </div>
 </aside>
 <!--sidebar end-->
+
+ <section id="main-content">
