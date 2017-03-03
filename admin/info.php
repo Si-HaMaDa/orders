@@ -50,7 +50,7 @@ if (isset($_POST['submit'])) {
 						<div class="form-group">
 						  <label class="col-sm-2 control-label">Company Headquarter</label>
 						  <div class="col-sm-10">
-						      <input type="text" name="head" minlength="5" class="form-control" value="<?php echo $info->data['head']; ?>" placeholder="Company Headquarter">
+						      <input type="text" name="head" minlength="3" class="form-control" value="<?php echo $info->data['head']; ?>" placeholder="Company Headquarter">
 						  </div>
 						</div>
 
@@ -64,7 +64,7 @@ if (isset($_POST['submit'])) {
 						<div class="form-group">
 						  <label class="col-sm-2 control-label">Company Work Times<span class="required">*</span></label>
 						  <div class="col-sm-10">
-						      <input type="text" name="worktime" minlength="5" class="form-control" value="<?php echo $info->data['worktime']; ?>" placeholder="Company Work Times">
+						      <input type="text" name="worktime" minlength="3" class="form-control" value="<?php echo $info->data['worktime']; ?>" placeholder="Company Work Times">
 						  </div>
 						</div>
 

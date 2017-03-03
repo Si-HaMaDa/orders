@@ -33,13 +33,13 @@ class Info extends Eloquent
 		}
 
 		if ($this::where('id', 1)
-          	 ->update(
-          	 	['name' 	=> filter_var( $_POST['name']		, FILTER_SANITIZE_STRING)],
-          	 	['head' 	=> filter_var( $_POST['head']		, FILTER_SANITIZE_STRING)],
-          	 	['phones' 	=> filter_var( $_POST['phones']		, FILTER_SANITIZE_STRING)],
-          	 	['worktime' => filter_var( $_POST['worktime'] 	, FILTER_SANITIZE_STRING)],
-          	 	['desc' 	=> filter_var( $_POST['desc']		, FILTER_SANITIZE_STRING)]
-          	 	))
+          	 ->update([
+          	 	'name' 	=> filter_var( $_POST['name']		, FILTER_SANITIZE_STRING),
+          	 	'head' 	=> filter_var( $_POST['head']		, FILTER_SANITIZE_STRING),
+          	 	'phones' 	=> filter_var( $_POST['phones']	, FILTER_SANITIZE_STRING),
+          	 	'worktime' => filter_var( $_POST['worktime'], FILTER_SANITIZE_STRING),
+          	 	'desc' 	=> filter_var( $_POST['desc']		, FILTER_SANITIZE_STRING)
+          	 	]))
 		{
 			echo "<script>alert('Done');window.location='';</script>";
 		}
