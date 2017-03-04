@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net
 --
 -- المزود: localhost:3306
--- أنشئ في: 28 فبراير 2017 الساعة 22:40
+-- أنشئ في: 04 مارس 2017 الساعة 08:14
 -- إصدارة المزود: 5.6.35-log
 -- PHP إصدارة: 5.6.30
 
@@ -31,9 +31,26 @@ CREATE TABLE IF NOT EXISTS `calls` (
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `phone` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `subject` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `desc` longtext COLLATE utf8_unicode_ci,
   `country` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `city` int(11) DEFAULT NULL,
+  `city` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- بنية الجدول `cats`
+--
+
+CREATE TABLE IF NOT EXISTS `cats` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `img` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `desc` longtext COLLATE utf8_unicode_ci,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
@@ -88,6 +105,7 @@ CREATE TABLE IF NOT EXISTS `out_products` (
   `price` int(11) DEFAULT NULL,
   `statu` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `num` int(11) DEFAULT NULL,
+  `cat_id` int(11) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
@@ -102,11 +120,12 @@ CREATE TABLE IF NOT EXISTS `out_products` (
 CREATE TABLE IF NOT EXISTS `products` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `img` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `img` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `desc` longtext COLLATE utf8_unicode_ci,
-  `price` int(11) NOT NULL,
+  `price` int(11) DEFAULT NULL,
   `statu` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `num` int(11) DEFAULT NULL,
+  `cat_id` int(11) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
