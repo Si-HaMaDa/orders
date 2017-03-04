@@ -313,7 +313,7 @@ return array(
     'Symfony\\Component\\Translation\\Writer\\TranslationWriter' => $vendorDir . '/symfony/translation/Writer/TranslationWriter.php',
     'Symfony\\Polyfill\\Mbstring\\Mbstring' => $vendorDir . '/symfony/polyfill-mbstring/Mbstring.php',
     'classes\\Call\\Call' => $baseDir . '/app/classes/call/Call.php',
-    'classes\\Category\\Category' => $baseDir . '/app/classes/category/Category.php',
+    'classes\\Cat\\Cat' => $baseDir . '/app/classes/cat/Cat.php',
     'classes\\Info\\Info' => $baseDir . '/app/classes/info/info.php',
     'classes\\Order\\Order' => $baseDir . '/app/classes/order/order.php',
     'classes\\OutProduct\\OutProduct' => $baseDir . '/app/classes/outProduct/OutProduct.php',

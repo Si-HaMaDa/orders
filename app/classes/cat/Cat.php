@@ -1,11 +1,11 @@
-<?php namespace classes\Category;
+<?php namespace classes\Cat;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
 /**
 * Category class
 */
-class Category extends Eloquent
+class Cat extends Eloquent
 {
 	public $data;
 	public $errors = array();

@@ -40,13 +40,13 @@ $capsule::schema()->create('products', function($table)
    $table->integer('price')->nullable();
    $table->string('statu')->nullable();
    $table->integer('num')->nullable();
-   $table->integer('category_id')->nullable();
+   $table->integer('cat_id')->nullable();
    $table->timestamps();
 });
 
 
-$capsule::schema()->dropIfExists('categories');
-$capsule::schema()->create('categories', function($table)
+$capsule::schema()->dropIfExists('cats');
+$capsule::schema()->create('cats', function($table)
 {
    $table->increments('id');
    $table->string('name');
@@ -78,7 +78,7 @@ $capsule::schema()->create('out_products', function($table)
    $table->integer('price')->nullable();
    $table->string('statu')->nullable();
    $table->integer('num')->nullable();
-   $table->integer('category_id')->nullable();
+   $table->integer('cat_id')->nullable();
    $table->timestamps();
 });
 
