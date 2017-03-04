@@ -387,13 +387,13 @@ class ComposerStaticInite8ed9557ff8684ecce37aa91aafaaaa0
         'Symfony\\Component\\Translation\\Util\\ArrayConverter' => __DIR__ . '/..' . '/symfony/translation/Util/ArrayConverter.php',
         'Symfony\\Component\\Translation\\Writer\\TranslationWriter' => __DIR__ . '/..' . '/symfony/translation/Writer/TranslationWriter.php',
         'Symfony\\Polyfill\\Mbstring\\Mbstring' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/Mbstring.php',
-        'classes\\Call\\Call' => __DIR__ . '/../..' . '/app/classes/call/Call.php',
-        'classes\\Cat\\Cat' => __DIR__ . '/../..' . '/app/classes/cat/Cat.php',
+        'classes\\Call\\Call' => __DIR__ . '/../..' . '/app/classes/call/call.php',
+        'classes\\Cat\\Cat' => __DIR__ . '/../..' . '/app/classes/cat/cat.php',
         'classes\\Info\\Info' => __DIR__ . '/../..' . '/app/classes/info/info.php',
         'classes\\Order\\Order' => __DIR__ . '/../..' . '/app/classes/order/order.php',
-        'classes\\OutProduct\\OutProduct' => __DIR__ . '/../..' . '/app/classes/outProduct/OutProduct.php',
+        'classes\\OutProduct\\OutProduct' => __DIR__ . '/../..' . '/app/classes/outProduct/outProduct.php',
         'classes\\Product\\Product' => __DIR__ . '/../..' . '/app/classes/product/product.php',
-        'classes\\User\\User' => __DIR__ . '/../..' . '/app/classes/user/User.php',
+        'classes\\User\\User' => __DIR__ . '/../..' . '/app/classes/user/user.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
