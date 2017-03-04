@@ -40,7 +40,7 @@
           </li>
           <li>                     
               <a class="" href="messages.php">
-                  <i class="icon-envelope-l"></i>
+                  <i class="icon_mail_alt"></i>
                   <span>Messages</span>
                   
               </a>
