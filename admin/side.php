@@ -39,8 +39,8 @@
               </a>
           </li>
           <li>                     
-              <a class="" href="chart-chartjs.html">
-                  <i class="icon_piechart"></i>
+              <a class="" href="messages.php">
+                  <i class="icon-envelope-l"></i>
                   <span>Messages</span>
                   
               </a>

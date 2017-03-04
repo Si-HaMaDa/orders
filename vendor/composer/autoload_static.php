@@ -388,6 +388,7 @@ class ComposerStaticInite8ed9557ff8684ecce37aa91aafaaaa0
         'Symfony\\Component\\Translation\\Writer\\TranslationWriter' => __DIR__ . '/..' . '/symfony/translation/Writer/TranslationWriter.php',
         'Symfony\\Polyfill\\Mbstring\\Mbstring' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/Mbstring.php',
         'classes\\Call\\Call' => __DIR__ . '/../..' . '/app/classes/call/Call.php',
+        'classes\\Category\\Category' => __DIR__ . '/../..' . '/app/classes/category/Category.php',
         'classes\\Info\\Info' => __DIR__ . '/../..' . '/app/classes/info/info.php',
         'classes\\Order\\Order' => __DIR__ . '/../..' . '/app/classes/order/order.php',
         'classes\\OutProduct\\OutProduct' => __DIR__ . '/../..' . '/app/classes/outProduct/OutProduct.php',

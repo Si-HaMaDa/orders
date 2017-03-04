@@ -59,7 +59,7 @@ require 'dbconf/dbconf.php';
           <ul class="nav navbar-nav">
             <li class="active"><a href="">Home</a></li>
             <li><a href="about.php">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="contact.php">Contact</a></li>
           </ul>
         </div><!-- /.nav-collapse -->
       </div><!-- /.container -->
@@ -73,7 +73,7 @@ require 'dbconf/dbconf.php';
             <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
           </p>
           <div class="jumbotron">
-            <h1>Hello, world!</h1>
+            <h1>Hello, Welcome to our humble site!</h1>
             <p>This is an example to show the potential of an offcanvas layout pattern in Bootstrap. Try some responsive-range viewport sizes to see it in action.</p>
           </div>
           <div class="row">

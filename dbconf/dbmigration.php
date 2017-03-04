@@ -35,11 +35,23 @@ $capsule::schema()->create('products', function($table)
 {
    $table->increments('id');
    $table->string('name');
-   $table->string('img');
+   $table->string('img')->nullable();
    $table->longText('desc')->nullable();
-   $table->integer('price');
+   $table->integer('price')->nullable();
    $table->string('statu')->nullable();
    $table->integer('num')->nullable();
+   $table->integer('category_id')->nullable();
+   $table->timestamps();
+});
+
+
+$capsule::schema()->dropIfExists('categories');
+$capsule::schema()->create('categories', function($table)
+{
+   $table->increments('id');
+   $table->string('name');
+   $table->string('img')->nullable();
+   $table->longText('desc')->nullable();
    $table->timestamps();
 });
 
@@ -66,6 +78,7 @@ $capsule::schema()->create('out_products', function($table)
    $table->integer('price')->nullable();
    $table->string('statu')->nullable();
    $table->integer('num')->nullable();
+   $table->integer('category_id')->nullable();
    $table->timestamps();
 });
 
@@ -77,9 +90,10 @@ $capsule::schema()->create('calls', function($table)
    $table->string('name');
    $table->string('email');
    $table->string('phone');
+   $table->string('subject')->nullable();
    $table->longText('desc')->nullable();
    $table->string('country')->nullable();
-   $table->integer('city')->nullable();
+   $table->string('city')->nullable();
    $table->timestamps();
 });
 

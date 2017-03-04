@@ -14,8 +14,7 @@ class Info extends Eloquent
 
 	public function getData()
 	{
-		$this->data = $this->find(1)->toArray();
-		// return $this->data;
+		$this->data = $this->find(1);
 	}
 
 	public function postData()
