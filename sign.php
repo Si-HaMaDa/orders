@@ -50,7 +50,7 @@ if(isset($_POST['singup'])){
   <div class="login-wrap">
 	<div class="login-html">
 		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
-		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+		<input id="tab-2" type="radio" name="tab" class="sign-up" <?=$user->signup_data_check['checked']?>><label for="tab-2" class="tab">Sign Up</label>
 		<div class="login-form">
 
 		<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">

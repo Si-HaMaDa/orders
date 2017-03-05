@@ -45,7 +45,7 @@ class Call extends Eloquent
 		}
 		
   	 	$this->name    = filter_var( $_POST['name']	     , FILTER_SANITIZE_STRING);
-  	 	$this->email   = filter_var( $_POST['email']     , FILTER_SANITIZE_STRING);
+  	 	$this->email   = filter_var( $_POST['email']     , FILTER_VALIDATE_EMAIL );
   	 	$this->phone   = filter_var( $_POST['phone']     , FILTER_SANITIZE_STRING);
   	 	$this->subject = filter_var( $_POST['subject']   , FILTER_SANITIZE_STRING);
   	 	$this->desc    = filter_var( $_POST['desc']	     , FILTER_SANITIZE_STRING);
