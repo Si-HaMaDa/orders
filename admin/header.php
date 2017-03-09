@@ -4,6 +4,11 @@ require '../vendor/autoload.php';
 
 require '../dbconf/dbconf.php';
 
+use classes\User\User as user;
+
+$user = new user();
+
+$user->checkAdminPages();
 ?>
 
 

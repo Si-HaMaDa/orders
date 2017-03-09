@@ -11,6 +11,8 @@ if(isset($_POST['singup'])){
 	$user->signup();
 } elseif (isset($_POST['singin'])) {
 	$user->signin();
+} elseif (isset($_GET['logout'])) {
+	$user->logout();
 }
 
 ?>
@@ -57,16 +59,16 @@ if(isset($_POST['singup'])){
 			<div class="sign-in-htm">
 				<div class="group">
 					<label for="user" class="label">Username</label>
-					<input id="user" type="text" name="name" required class="input">
+					<input id="user" type="text" name="email" required class="input">
 				</div>
 				<div class="group">
 					<label for="pass" class="label">Password</label>
 					<input id="pass" type="password" name="pass" required class="input" data-type="password">
 				</div>
-				<div class="group">
+				<!-- <div class="group">
 					<input id="check" type="checkbox" class="check" checked>
 					<label for="check"><span class="icon"></span> Keep me Signed in</label>
-				</div>
+				</div> -->
 				<div class="group">
 					<input type="submit" class="button" name="singin" value="Sign In">
 				</div>

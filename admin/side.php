@@ -49,13 +49,13 @@
                      
           <li class="sub-menu">
               <a href="javascript:;" class="">
-                  <i class="icon_table"></i>
+                  <i class="icon_profile"></i>
                   <span>Users</span>
                   <span class="menu-arrow arrow_carrot-right"></span>
               </a>
               <ul class="sub">
-                  <li><a class="" href="javascript:;">Add user</a></li>
-                  <li><a class="" href="javascript:;">Manage Users</a></li>
+                  <li><a class="" href="user.php">Add user</a></li>
+                  <li><a class="" href="users.php">Manage Users</a></li>
               </ul>
           </li>
           

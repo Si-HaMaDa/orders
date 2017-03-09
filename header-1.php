@@ -48,6 +48,7 @@ require 'dbconf/dbconf.php';
   </head>
 
     <body>
+
     <nav class="navbar navbar-fixed-top navbar-inverse">
       <div class="container">
         <div class="navbar-header">
@@ -61,10 +62,27 @@ require 'dbconf/dbconf.php';
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="">Home</a></li>
+            <li class="active"><a href="<?=BASE_URL?>">Home</a></li>
             <li><a href="about.php">About</a></li>
             <li><a href="contact.php">Contact</a></li>
+            <li><a href="sign.php">Sign in/up</a></li>
+            <li><a href="<?=BASE_URL?>/admin">ADMIN</a></li>
+
           </ul>
+          <?php if (@$_SESSION['user_logged_in'] == 1): ?>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Hi <?=$_SESSION['user_name']?> <span class="caret"></span>
+                <ul class="dropdown-menu">
+                <li>
+                  <a href="sign.php?logout">logout!</a>
+                </li>
+                </ul>
+                </a>
+              </li>
+            </ul>
+          <?php endif; ?>
         </div><!-- /.nav-collapse -->
       </div><!-- /.container -->
     </nav><!-- /.navbar -->
