@@ -11,7 +11,7 @@ if (isset($_GET['delete']) && is_numeric($_GET['delete'])) {
 
 	$user->getOneData((int)($_GET['view']));
 
-	include 'temps/userVTemp.php';
+	include 'temps/userViewTemp.php';
 
 } elseif (isset($_GET['edit']) && is_numeric($_GET['edit'])) {
 
@@ -22,7 +22,7 @@ if (isset($_GET['delete']) && is_numeric($_GET['delete'])) {
 	} else {
 		$user->getOneData((int)($_GET['edit']));
 	}
-	include 'temps/userETemp.php';
+	include 'temps/userEditTemp.php';
 
 } else {
 
@@ -32,7 +32,7 @@ if (isset($_GET['delete']) && is_numeric($_GET['delete'])) {
 		}
 	}
 
-	include 'temps/userNTemp.php';
+	include 'temps/userNewTemp.php';
 
 }
 

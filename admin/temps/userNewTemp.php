@@ -65,8 +65,10 @@
 				<div class="form-group">
 				  <label class="col-sm-2 control-label">Level<span class="required">*</span></label>
 				  <div class="col-sm-10">
-				      <input id="admin" type="checkbox" value="7" name="lvl" <?=$user->data['lvl']?'checked':''?>> 
-				      <label for="admin">Admin</label>
+				      <label class="checkbox-inline" for="admin">
+				      	<input id="admin" type="checkbox" value="7" name="lvl" <?=$user->data['lvl']?'checked':''?>> 
+				      	Admin
+				      </label>
 				  </div>
 				</div>
 

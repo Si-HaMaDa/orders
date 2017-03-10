@@ -282,7 +282,7 @@ $user->checkAdminPages();
                             <span class="profile-ava">
                                 <img alt="" src="img/avatar1_small.jpg">
                             </span>
-                            <span class="username">Jenifer Smith</span>
+                            <span class="username"><?=$_SESSION['user_name']?></span>
                             <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu extended logout">
@@ -300,13 +300,13 @@ $user->checkAdminPages();
                                 <a href="#"><i class="icon_chat_alt"></i> Chats</a>
                             </li>
                             <li>
-                                <a href="login.html"><i class="icon_key_alt"></i> Log Out</a>
+                                <a href="<?=BASE_URL?>/../sign.php?logout"><i class="icon_key_alt"></i> Log Out</a>
                             </li>
                             <li>
-                                <a href="documentation.html"><i class="icon_key_alt"></i> Documentation</a>
+                                <a href="#"><i class="icon_key_alt"></i> Documentation</a>
                             </li>
                             <li>
-                                <a href="documentation.html"><i class="icon_key_alt"></i> Documentation</a>
+                                <a href="#"><i class="icon_key_alt"></i> Documentation</a>
                             </li>
                         </ul>
                     </li>

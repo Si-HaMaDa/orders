@@ -30,6 +30,32 @@ class User extends Eloquent
 	}
 
 
+	public function getData()
+	{
+		$this->data = $this->all();
+	}
+
+	public function postData()
+	{
+		foreach ($_POST as $key => $value) {
+			$this->data[$key] = $value;
+		}
+	}
+
+	public function getOneData($one)
+	{
+		$this->data = $this->find($one);
+	}
+
+	public function deleteee($del)
+	{
+		if ($this::where('id', $del)->delete()){
+			echo "<script>alert('the user has been deleted successfully');window.location='users.php';</script>";
+			die('Try another tirck :D');
+		}
+	}
+
+
 	public function signup()
 	{
 		if ($this->user_logged && !$this->checkAdmin()) {
@@ -207,31 +233,6 @@ class User extends Eloquent
         session_destroy();
         echo "<script>alert('You\'re loged out...');window.location='index.php';</script>";
         die('Try another tirck :D');
-	}
-
-	public function getData()
-	{
-		$this->data = $this->all();
-	}
-
-	public function postData()
-	{
-		foreach ($_POST as $key => $value) {
-			$this->data[$key] = $value;
-		}
-	}
-
-	public function getOneData($one)
-	{
-		$this->data = $this->find($one);
-	}
-
-	public function deleteee($del)
-	{
-		if ($this::where('id', $del)->delete()){
-			echo "<script>alert('the user has been deleted successfully');window.location='users.php';</script>";
-			die('Try another tirck :D');
-		}
 	}
 
 

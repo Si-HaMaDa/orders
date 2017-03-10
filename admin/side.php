@@ -17,8 +17,9 @@
                   <span class="menu-arrow arrow_carrot-right"></span>
               </a>
               <ul class="sub">
-                  <li><a class="" href="javascript:;">Add product</a></li>                          
-                  <li><a class="" href="javascript:;">Manage Products</a></li>
+                  <li><a class="" href="product.php">Add product</a></li>                          
+                  <li><a class="" href="products.php">Manage Products</a></li>
+                  <li><a class="" href="cats.php">Manage Categorys</a></li>
               </ul>
           </li>       
           <li class="sub-menu">
