@@ -19,7 +19,7 @@
               <ul class="sub">
                   <li><a class="" href="product.php">Add product</a></li>                          
                   <li><a class="" href="products.php">Manage Products</a></li>
-                  <li><a class="" href="cats.php">Manage Categorys</a></li>
+                  <li><a class="" href="cats.php">Manage Categories</a></li>
               </ul>
           </li>       
           <li class="sub-menu">

@@ -38,7 +38,7 @@ foreach ($product->data as $key => $value) {
 	         <td><?=explode(" ", $value['created_at'])[0]?><br><?=explode(" ", $value['created_at'])[1]?></td>
 	         <td><?=$value['statu']?></td>
 	         <td><?=$product->getCatName($value['cat_id'])->name?></td>
-	         <td>0<?=$value['desc']?></td>
+	         <td><?=$value['desc']?></td>
 	         <td><img width="250" src="<?=$value['img']?>"></td>
 	         <td>
 	          <div class="btn-group">

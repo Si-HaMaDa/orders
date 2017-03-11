@@ -2,45 +2,27 @@
 
 require 'header-1.php';
 
+use classes\Product\Product as product;
+
+$product = new product();
+
+$product->getData();
 ?>
 
+<?php
+foreach ($product->data as $key => $value) {
+?>
 
-
-<div class="col-xs-6 col-lg-4">
-  <h2>Heading</h2>
-  <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-  <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+<div class="col-xs-12 col-lg-6">
+  <h2><?=$value['name']?></h2>
+  <img class="img-responsive" src="<?=$value['img']?>">
+  <p><?=$value['desc']?></p>
+  <p><a class="btn btn-default" href="product.php?view=<?=$value['id']?>" role="button">View details &raquo;</a></p>
 </div><!--/.col-xs-6.col-lg-4-->
-<div class="col-xs-6 col-lg-4">
-  <h2>Heading</h2>
-  <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-  <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-</div><!--/.col-xs-6.col-lg-4-->
-<div class="col-xs-6 col-lg-4">
-  <h2>Heading</h2>
-  <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-  <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-</div><!--/.col-xs-6.col-lg-4-->
-<div class="col-xs-6 col-lg-4">
-  <h2>Heading</h2>
-  <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-  <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-</div><!--/.col-xs-6.col-lg-4-->
-<div class="col-xs-6 col-lg-4">
-  <h2>Heading</h2>
-  <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-  <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-</div><!--/.col-xs-6.col-lg-4-->
-<div class="col-xs-6 col-lg-4">
-  <h2>Heading</h2>
-  <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-  <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-</div><!--/.col-xs-6.col-lg-4-->
-
-
-      
-
 
 <?php
+}
+
+
 require 'footer.php';
 ?>

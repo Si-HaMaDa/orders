@@ -22,7 +22,7 @@
 				<div class="form-group">
 				  <label class="col-sm-2 control-label">Name<span class="required">*</span></label>
 				  <div class="col-sm-10">
-				      <input type="text" name="name" minlength="5" class="form-control" value="<?=$cat->data['name']?>" placeholder="Name" required>
+				      <input type="text" name="name" minlength="3" class="form-control" value="<?=$cat->data['name']?>" placeholder="Name" required>
 				  </div>
 				</div>
 
