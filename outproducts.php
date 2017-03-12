@@ -2,22 +2,23 @@
 
 require 'header-1.php';
 
-use classes\Product\Product as product;
+use classes\OutProduct\OutProduct as outproduct;
 
-$product = new product();
+$outproduct = new outproduct();
 
-$product->getData();
+$outproduct->getData();
 ?>
 
 <?php
-foreach ($product->data as $key => $value) {
+foreach ($outproduct->data as $key => $value) {
 ?>
 
 <div class="col-xs-12 col-lg-6">
   <h2><?=$value['name']?></h2>
   <img class="img-responsive img-thumbnail" src="<?=$value['img']?>">
   <p><?=$value['desc']?></p>
-  <p><a class="btn btn-default" href="product.php?view=<?=$value['id']?>" role="button">View details &raquo;</a></p>
+  <p>Price at: <?=$value['price']?></p>
+  <p>With Category: <?=$outproduct->getCatName($value['cat_id'])->name?></p>
 </div><!--/.col-xs-6.col-lg-4-->
 
 <?php

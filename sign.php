@@ -58,7 +58,7 @@ if(isset($_POST['singup'])){
 		<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
 			<div class="sign-in-htm">
 				<div class="group">
-					<label for="user" class="label">Username</label>
+					<label for="user" class="label">Email or Phone number</label>
 					<input id="user" type="text" name="email" required class="input">
 				</div>
 				<div class="group">

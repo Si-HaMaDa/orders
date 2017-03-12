@@ -30,8 +30,8 @@
                   <span class="menu-arrow arrow_carrot-right"></span>
               </a>
               <ul class="sub">
-                  <li><a class="" href="javascript:;">Add Product</a></li>
-                  <li><a class="" href="javascript:;">Manage Products</a></li>
+                  <li><a class="" href="outproduct.php">Add Product</a></li>
+                  <li><a class="" href="outproducts.php">Manage Products</a></li>
               </ul>
           </li>
           <li>

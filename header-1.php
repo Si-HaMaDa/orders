@@ -1,8 +1,4 @@
 <?php
-if(!session_id())
-{
-    session_start();
-}
 
 require 'vendor/autoload.php';
 
@@ -63,6 +59,7 @@ require 'dbconf/dbconf.php';
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="<?=BASE_URL?>">Home</a></li>
+            <li><a href="outproducts.php">Out products</a></li>
             <li><a href="about.php">About</a></li>
             <li><a href="contact.php">Contact</a></li>
             <li><a href="sign.php">Sign in/up</a></li>
