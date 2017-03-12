@@ -66,7 +66,9 @@ require 'dbconf/dbconf.php';
             <li><a href="about.php">About</a></li>
             <li><a href="contact.php">Contact</a></li>
             <li><a href="sign.php">Sign in/up</a></li>
+            <?php if (@$_SESSION['user_logged_in'] == 1): ?>
             <li><a href="<?=BASE_URL?>/admin">ADMIN</a></li>
+            <?php endif; ?>
 
           </ul>
           <?php if (@$_SESSION['user_logged_in'] == 1): ?>

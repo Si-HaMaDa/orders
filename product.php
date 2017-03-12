@@ -67,7 +67,7 @@ if ( isset($_GET['view']) && is_numeric($_GET['view']) ) {
 		</div>
 
 		<div>
-			<a href="order.php?id=<?=$product->data['id']?>" class="btn btn-primary">Order this Product</a>
+			<a href="order.php?id=<?=$product->data['id']?>&name=<?=$product->data['name']?>" class="btn btn-primary">Order this Product</a>
 		</div>
 
 	</div>
